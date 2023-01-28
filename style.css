@@ -21,9 +21,63 @@ body{
 }
 
 .input-mensaje{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: darkblue;
+    margin: 50px 0 20px 75px;
 }
+
+.input-mensaje textarea{
+
+    font-family: 'Roboto Condensed', sans-serif;    
+    background-color: #E5E5E5;
+    outline: none;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0A3871;
+    
+}
+
+.input-mensaje textarea::placeholder{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #0A3871;
+    font-weight: bold;
+       
+}
+
+.input-mensaje p{
+    font-size: 1.25em;
+}
+
+
+.encriptar-boton{
+    margin-left: 75px;
+}
+
+.desencriptar-boton{
+    margin-left: 35px;
+}
+
+.desencriptar-boton, .encriptar-boton{
+    padding: 15px 70px;
+    border-color: #0A3871;
+    border-radius: 5px;
+    background-color: #0A3871;
+    color: #E5E5E5;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.desencriptar-boton:hover, .encriptar-boton:hover{
+    background-color: #0A1871;
+    border-color: #0A0871;
+    transform: scale(1.2);
+    transition: 400ms;
+    font-size: 1.05em;
+}
+
+    
+
+
+
 
 
 

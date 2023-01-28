@@ -16,7 +16,7 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
         </style>
-        
+
     </head>
     <body>
         <section class="principal-logo">  
@@ -28,13 +28,14 @@
             <div class="input-mensaje">
                 <label for="mensaje"></label>
                 <textarea id="mensaje" cols="30" rows="10" placeholder="Ingrese su texto aqui"></textarea>
-            </div>            
+                
+                <p><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</p>
 
-            <p><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</p>
-
-            <div>
-                <label for="encriptar-boton"><input type="submit" value="Encriptar"></label>
-                <label for="desencriptar-boton"><input type="submit" value="Desencriptar"></label>
+            </div>
+            <div input-botones>
+                <input type="submit" value="Encriptar" class="encriptar-boton">
+                 
+                <input type="submit" value="Desencriptar" class="desencriptar-boton">
             </div>
             
         </section>
