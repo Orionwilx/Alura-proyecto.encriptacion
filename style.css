@@ -1,0 +1,30 @@
+body{
+    background: #E5E5E5;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.principal-logo{
+    padding: 2% 0 0 2%;
+    margin-bottom: 20px;
+}
+
+.logo{
+    height: 48px;
+    width: 31.085588455200195px;
+    left: 44px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.principal-contenido{
+    height: 500px;
+}
+
+.input-mensaje{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: darkblue;
+}
+
+
+
+
