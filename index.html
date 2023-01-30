@@ -27,20 +27,27 @@
 
             <div class="input-mensaje">
                 <label for="mensaje"></label>
-                <textarea id="mensaje" cols="30" rows="10" placeholder="Ingrese su texto aqui"></textarea>
-                
-                <p><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</p>
+                <textarea id="mensaje" cols="32" rows="13" placeholder="Ingrese su texto aqui"></textarea>
 
+                <div class="output-mensaje">
+                    <label for="resultado"></label>
+                    <textarea id="resultado" cols="27" rows="13" placeholder="..."></textarea>
+                </div>
+
+                <div class="recordatorio">
+                    <p><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</p>
+                </div> 
             </div>
+            
+                      
             <div input-botones>
                 <input type="submit" value="Encriptar" class="encriptar-boton">
                  
                 <input type="submit" value="Desencriptar" class="desencriptar-boton">
+
+                <input type="submit" value="Copiar" class="copiar-boton">
             </div>
-            
-        </section>
-        <section class="principal-resultado">
-            <input type="text">
+                        
         </section>
     </body>
 </html>

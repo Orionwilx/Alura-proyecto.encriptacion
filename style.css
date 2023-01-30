@@ -17,15 +17,16 @@ body{
 }
 
 .principal-contenido{
-    height: 500px;
+    height: 800px;    
 }
 
 .input-mensaje{
-    margin: 50px 0 20px 75px;
+    margin: 50px 0 20px 100px;
+    display: inline-block;
+    
 }
 
 .input-mensaje textarea{
-
     font-family: 'Roboto Condensed', sans-serif;    
     background-color: #E5E5E5;
     outline: none;
@@ -33,7 +34,22 @@ body{
     font-size: 2em;
     font-weight: bold;
     color: #0A3871;
-    
+}
+
+.input-mensaje #mensaje{
+    margin-right:300px;
+}
+
+.output-mensaje{
+    display: inline-block;
+    background-color: #f3f3f3; 
+    border-radius: 15px;   
+}
+
+.output-mensaje #resultado{
+    border-radius: 7px;
+    background: url(Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
 }
 
 .input-mensaje textarea::placeholder{
@@ -47,16 +63,23 @@ body{
     font-size: 1.25em;
 }
 
+.recodatorio{
+    display: block;
+}
 
 .encriptar-boton{
-    margin-left: 75px;
+    margin-left: 125px;
 }
 
 .desencriptar-boton{
     margin-left: 35px;
 }
 
-.desencriptar-boton, .encriptar-boton{
+.copiar-boton{
+    margin-left: 320px;
+}
+
+.desencriptar-boton, .encriptar-boton, .copiar-boton{
     padding: 15px 70px;
     border-color: #0A3871;
     border-radius: 5px;
@@ -66,7 +89,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.desencriptar-boton:hover, .encriptar-boton:hover{
+.desencriptar-boton:hover, .encriptar-boton:hover ,.copiar-boton:hover{
     background-color: #0A1871;
     border-color: #0A0871;
     transform: scale(1.2);
