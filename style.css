@@ -1,32 +1,21 @@
-body{
+*{
     background: #E5E5E5;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.principal-logo{
-    padding: 2% 0 0 2%;
-    margin-bottom: 20px;
+main{
+    display: flex;
 }
 
 .logo{
+    padding: 2% 0 0 2%;
+    margin-bottom: 20px;
     height: 48px;
     width: 31.085588455200195px;
-    left: 44px;
-    top: 0px;
-    border-radius: 0px;
 }
-
-.principal-contenido{
-    height: 800px;    
-}
-
-.input-mensaje{
+/* CSS conpartido entre los dos texareas */
+.text-area{
     margin: 50px 0 20px 100px;
-    display: inline-block;
-    
-}
-
-.input-mensaje textarea{
     font-family: 'Roboto Condensed', sans-serif;    
     background-color: #E5E5E5;
     outline: none;
@@ -34,52 +23,36 @@ body{
     font-size: 2em;
     font-weight: bold;
     color: #0A3871;
-}
-
-.input-mensaje #mensaje{
     margin-right:300px;
+    
 }
 
-.output-mensaje{
-    display: inline-block;
-    background-color: #f3f3f3; 
-    border-radius: 15px;   
-}
-
-.output-mensaje #resultado{
-    border-radius: 7px;
-    background: url(Imagenes/Muñeco.png);
-    background-repeat: no-repeat;
-}
-
-.input-mensaje textarea::placeholder{
+::placeholder{
     font-family: 'Roboto Condensed', sans-serif;
     color: #0A3871;
     font-weight: bold;
        
 }
 
-.input-mensaje p{
+.informacion{
     font-size: 1.25em;
+    margin:  0 0 0 100px;
 }
 
-.recodatorio{
-    display: block;
-}
-
-.encriptar-boton{
+/* Css de los botones ya que solo son 3 y son iguales */
+.boton-encriptar{
     margin-left: 125px;
 }
 
-.desencriptar-boton{
+.boton-desencriptar{
     margin-left: 35px;
 }
 
-.copiar-boton{
-    margin-left: 320px;
+.boton-copiar{
+    margin-left: 100px;
 }
 
-.desencriptar-boton, .encriptar-boton, .copiar-boton{
+.boton-desencriptar, .boton-encriptar, .boton-copiar{
     padding: 15px 70px;
     border-color: #0A3871;
     border-radius: 5px;
@@ -89,13 +62,32 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.desencriptar-boton:hover, .encriptar-boton:hover ,.copiar-boton:hover{
+.boton-encriptar:hover, .boton-desencriptar:hover ,.boton-copiar:hover{
     background-color: #0A1871;
     border-color: #0A0871;
     transform: scale(1.2);
     transition: 400ms;
     font-size: 1.05em;
 }
+
+.mensaje{
+    margin: 50px 0 20px 100px;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    background-image: url(Imagenes/Muñeco.png);
+    background-repeat: no-repeat; 
+    border-radius: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #0A3871;
+       
+}
+
+
+
+
 
     
 

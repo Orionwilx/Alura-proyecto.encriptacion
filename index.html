@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <!-- Realizar un pagina que ENCRIPTE mensajes 
-    La letra "e" es convertida para "enter"
-    La letra "i" es convertida para "imes"
-    La letra "a" es convertida para "ai"
-    La letra "o" es convertida para "ober"
-    La letra "u" es convertida para "ufat" -->
-
     <head>
         <meta charset="UTF-8">
         <title>Encriptador</title>
@@ -19,36 +11,33 @@
 
     </head>
     <body>
-        <section class="principal-logo">  
-
-            <h1 class="logo"><img src="/Imagenes/logo.png" alt="Logo Principal"></h1>
-        </section>
-        <section class="principal-contenido">
-
-            <div class="input-mensaje">
-                <label for="mensaje"></label>
-                <textarea id="mensaje" cols="32" rows="13" placeholder="Ingrese su texto aqui"></textarea>
-
-                <div class="output-mensaje">
-                    <label for="resultado"></label>
-                    <textarea id="resultado" cols="27" rows="13" placeholder="..."></textarea>
+        <header> 
+                <img class="logo" src="/Imagenes/logo.png" alt="Logo Principal">
+            
+        </header>        
+        <main>
+            <section>
+                <textarea class="text-area" cols="25" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion"><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</h6>
+                </div>                
+                <div>
+                <button class="boton-encriptar">Encriptar</button>
+                <button class="boton-desencriptar">Desencriptar</button>
+                </div>    
+                
+            </section>
+            <section>
+                <textarea class="mensaje" cols="25" rows="10" placeholder="..."></textarea>
+                <div>
+                    <button class="boton-copiar">Copiar</button>
                 </div>
-
-                <div class="recordatorio">
-                    <p><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</p>
-                </div> 
-            </div>
+            </section>
             
                       
-            <div input-botones>
-                <input type="submit" value="Encriptar" class="encriptar-boton">
-                 
-                <input type="submit" value="Desencriptar" class="desencriptar-boton">
-
-                <input type="submit" value="Copiar" class="copiar-boton">
-            </div>
+            
                         
-        </section>
+        </main>
     </body>
 </html>
 <script>
