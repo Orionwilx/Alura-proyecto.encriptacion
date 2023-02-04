@@ -5,7 +5,7 @@ const mensaje = document.querySelector(".mensaje");
 function botonEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
-    textArea.value = ""
+    textArea.value = "";
     mensaje.style.backgorunImage = "none"
 }
 function botonDesencriptar(){
