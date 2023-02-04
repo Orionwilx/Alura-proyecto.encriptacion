@@ -48,11 +48,11 @@ main{
     margin-left: 35px;
 }
 
-.boton-copiar{
+#boton-copiar{
     margin-left: 100px;
 }
 
-.boton-desencriptar, .boton-encriptar, .boton-copiar{
+.boton-desencriptar, .boton-encriptar, #boton-copiar{
     padding: 15px 70px;
     border-color: #0A3871;
     border-radius: 20px;
@@ -62,7 +62,7 @@ main{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.boton-encriptar:hover, .boton-desencriptar:hover ,.boton-copiar:hover{
+.boton-encriptar:hover, .boton-desencriptar:hover ,#boton-copiar:hover{
     background-color: #0A1871;
     border-color: #0A0871;
     transform: scale(1.2);

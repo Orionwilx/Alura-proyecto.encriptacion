@@ -52,21 +52,3 @@ function desecriptar(stringDesencriptada){
 
 
 
-document.querySelector(".boton-copiar").addEventListener("click",()=>{
-    copiar(mensaje);
-    alert('copiado')
-})
-
-function copiar(elemento){
-    const inputOculto = document.createAttribute('input');
-
-    inputOculto.setAttribute('value',elemento.innerText);
-
-    document.body.appendChild(inputOculto);
-
-    inputOculto.select();
-
-    document.execCommand('copy');
-
-    document.body.remove(inputOculto);
-}
