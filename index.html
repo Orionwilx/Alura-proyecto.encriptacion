@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Encriptador</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
-        </style>
 
-    </head>
-    <body>
-        <header> 
-                <img class="logo" src="/Imagenes/logo.png" alt="Logo Principal">
-            
-        </header>        
-        <main>
-            <section>
-                <textarea class="text-area" cols="25" rows="10" placeholder="Ingrese su texto aqui"></textarea>
-                <div>
-                    <h6 class="informacion"><img src="Imagenes/sinbolo.png">Solo letras minusculas y sin acento</h6>
-                </div>                
-                <div>
-                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
-                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
-                </div>    
-                
-            </section>
-            <section>
-                <textarea id="mensaje" class="mensaje" cols="25" rows="10" placeholder="..."></textarea>
-                <div>
-                    <button id="boton-copiar" onclick="copiar()" >Copiar</button>
-                </div>
-            </section>
-            
-                      
-            
-                        
-        </main>
-        <script src="scrip.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Imagenes/logo.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./Imagenes/logo.png" alt="Logo Principal">
+
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="25" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"><img src="./Imagenes/sinbolo.png">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div>
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+        <section>
+            <textarea id="mensaje" class="mensaje" cols="25" rows="10" placeholder="..."></textarea>
+            <div>
+                <input id="boton-copiar" value="Copiar texto" type="submit">
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <script src=" scrip.js"></script>
+</body>
+
 </html>
