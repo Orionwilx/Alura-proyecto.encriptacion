@@ -1,4 +1,2 @@
-No aparece el logo
 no desaparece el background image 
-el boton copiar no funciona
 agregale mas diseño xD
