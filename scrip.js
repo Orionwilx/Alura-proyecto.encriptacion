@@ -71,5 +71,5 @@ function copiarTexto(e) {
 	e.preventDefault();
 	const mensaje = men.value;
 	navigator.clipboard.writeText(mensaje);
-	mensaje.value = '';
+	men.value = '';
 }

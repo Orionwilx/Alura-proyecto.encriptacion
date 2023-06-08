@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./Imagenes/logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
     </style>
@@ -16,25 +17,17 @@
 <body>
     <header>
         <img class="logo" src="./Imagenes/logo.png" alt="Logo Principal">
-
     </header>
-    <main>
-        <section>
-            <textarea class="text-area" cols="25" rows="10" placeholder="Ingrese su texto aqui"></textarea>
-            <div>
-                <h6 class="informacion"><img src="./Imagenes/sinbolo.png">Solo letras minusculas y sin acento</h6>
-            </div>
-            <div>
-                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
-                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
-            </div>
-
+    <main class="container">
+        <section class="input-usuario">
+            <textarea class="text-area" placeholder="Ingrese su texto aqui"></textarea>
+            <h6 class="informacion"><img src="./Imagenes/sinbolo.png">Solo letras minusculas y sin acento</h6>
+            <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+            <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
         </section>
-        <section>
-            <textarea id="mensaje" class="mensaje" cols="25" rows="10" placeholder="..."></textarea>
-            <div>
-                <input id="boton-copiar" value="Copiar texto" type="submit">
-            </div>
+        <section class="ouput-encriptado boton-copiar">
+            <textarea id="mensaje" class="mensaje" placeholder="..."></textarea>
+            <input id="boton-copiar" value="Copiar texto" type="submit">
         </section>
 
 
