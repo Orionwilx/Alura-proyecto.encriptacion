@@ -82,10 +82,12 @@ main{
     border-radius: 7px;
     font-weight: bold;
     color: #0A3871;
-
        
 }
 
+.mensaje:focus{
+    background-image: none;
+}
 
 
 

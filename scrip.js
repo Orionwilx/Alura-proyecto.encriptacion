@@ -7,22 +7,18 @@ function botonEncriptar() {
 	const textoEncriptado = encriptar(textArea.value);
 	mensaje.value = textoEncriptado;
 	textArea.value = '';
-	mensaje.style.backgorunImage = 'none';
+	mensaje.focus();
 }
 function botonDesencriptar() {
 	const textDesencriptado = desecriptar(textArea.value);
 	mensaje.value = textDesencriptado;
 	textArea.value = '';
-	mensaje.style.backgorunImage = 'none';
+	mensaje.focus();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
 	btnCopiar.addEventListener('click', copiarTexto);
 });
-
-// function botoncopiar(){
-//     copiar(mensaje);
-// }
 
 // Funcion para encriptar los mensajes
 function encriptar(stringEncriptada) {
@@ -75,4 +71,5 @@ function copiarTexto(e) {
 	e.preventDefault();
 	const mensaje = men.value;
 	navigator.clipboard.writeText(mensaje);
+	mensaje.value = '';
 }
